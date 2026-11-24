@@ -1,0 +1,57 @@
+name: Add my modpack
+description: Ask for a modpack to be offered in the Patchwork launcher.
+title: "[Modpack] "
+labels: ["modpack request"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Modpack name
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Modrinth or CurseForge link
+      placeholder: https://modrinth.com/modpack/...
+    validations:
+      required: true
+  - type: checkboxes
+    id: versions
+    attributes:
+      label: Minecraft versions
+      options:
+        - label: "26.3"
+        - label: "26.2"
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Loader
+      options: [Fabric, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: author
+    attributes:
+      label: Are you the author?
+      options: ["Yes", "No"]
+    validations:
+      required: true
+  - type: input
+    id: permission
+    attributes:
+      label: If you're not the author, a link showing the author allows listing
+  - type: textarea
+    id: about
+    attributes:
+      label: What is the pack for?
+      placeholder: For example SkyBlock dungeons, or a light performance pack.
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Hypixel rules
+      options:
+        - label: As far as I know, every mod in this pack is allowed on Hypixel.
+          required: true

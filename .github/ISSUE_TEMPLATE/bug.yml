@@ -1,0 +1,32 @@
+name: Bug report
+description: Something in the Patchwork launcher or client is broken.
+labels: ["bug"]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Patchwork version
+      description: Shown in the launcher's Settings.
+    validations:
+      required: true
+  - type: input
+    id: mc
+    attributes:
+      label: Minecraft version and loader
+      placeholder: 26.3, vanilla
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+  - type: textarea
+    id: log
+    attributes:
+      label: Log
+      description: Paste or attach latest.log. Remove anything private first.
+      render: text

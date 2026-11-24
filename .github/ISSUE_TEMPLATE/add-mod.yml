@@ -1,0 +1,57 @@
+name: Add my mod
+description: Ask for a mod to be listed in the Patchwork launcher.
+title: "[Mod] "
+labels: ["mod request"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Mod name
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Modrinth or CurseForge link
+      placeholder: https://modrinth.com/mod/...
+    validations:
+      required: true
+  - type: checkboxes
+    id: versions
+    attributes:
+      label: Minecraft versions
+      options:
+        - label: "26.3"
+        - label: "26.2"
+  - type: dropdown
+    id: loader
+    attributes:
+      label: Loader
+      options: [Fabric, Other]
+    validations:
+      required: true
+  - type: dropdown
+    id: author
+    attributes:
+      label: Are you the author?
+      options: ["Yes", "No"]
+    validations:
+      required: true
+  - type: input
+    id: permission
+    attributes:
+      label: If you're not the author, a link showing the author allows listing
+      description: For example the licence, or a message from the author.
+  - type: textarea
+    id: why
+    attributes:
+      label: What does it do, and why should Patchwork list it?
+    validations:
+      required: true
+  - type: checkboxes
+    id: rules
+    attributes:
+      label: Hypixel rules
+      options:
+        - label: As far as I know, this mod is allowed on Hypixel.
+          required: true

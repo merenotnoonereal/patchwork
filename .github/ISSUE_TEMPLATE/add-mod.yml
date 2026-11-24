@@ -48,10 +48,3 @@ body:
       label: What does it do, and why should Patchwork list it?
     validations:
       required: true
-  - type: checkboxes
-    id: rules
-    attributes:
-      label: Hypixel rules
-      options:
-        - label: As far as I know, this mod is allowed on Hypixel.
-          required: true

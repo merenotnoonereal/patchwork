@@ -45,13 +45,6 @@ body:
     id: about
     attributes:
       label: What is the pack for?
-      placeholder: For example SkyBlock dungeons, or a light performance pack.
+      placeholder: For example a performance pack, or a pack for a specific server.
     validations:
       required: true
-  - type: checkboxes
-    id: rules
-    attributes:
-      label: Hypixel rules
-      options:
-        - label: As far as I know, every mod in this pack is allowed on Hypixel.
-          required: true

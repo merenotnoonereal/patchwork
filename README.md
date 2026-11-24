@@ -1,6 +1,6 @@
 # Patchwork
 
-A faster Minecraft Java client, built for Hypixel SkyBlock.
+A faster Minecraft Java client.
 
 **Download:** [patchworkclient.com](https://patchworkclient.com) or the [Releases](../../releases) page.
 
